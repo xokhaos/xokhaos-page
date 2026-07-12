@@ -6,9 +6,7 @@
 
 </div>
 
-I'm a blonde catboy developer who builds AI VTubers. They stream on their own. No human behind the wheel, just language models, voice synthesis, and a 3D avatar going feral live on Twitch.
-
-My main project is Moonlash. She's a red-haired demon with green eyes, a punk rock attitude, and absolutely zero filter. She curses, she games, she sings karaoke. I'm live alongside her every stream, so it's a duo thing, not a solo act.
+Catboy developer 3D Vtuber and I build Moonlash, a AI VTuber. 
 
 I also built the AI VTuber Directory at [aivtuber.tv](https://aivtuber.tv/). That's where you go to find every AI VTuber in the scene. Neuro-sama, Moonlash, Exilium, Viola, all of them. If it's an AI streamer worth watching, it's listed there. The data is published as JSON and CSV under CC0 if you want to mess with it.
 
