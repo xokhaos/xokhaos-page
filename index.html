@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Website</title>
+    <style>
+        /* Reset margins and ensure the body fills the entire viewport height */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Prevents scrollbars if the image fits the screen */
+        }
+
+        .centered-container {
+            max-width: 90vw; /* Keeps the image responsive on mobile screens */
+            max-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .centered-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Prevents distortion */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered-container">
+        <!-- Swap out 'placeholder.jpg' with your actual image path or URL -->
+        <img src="pic.webp" alt="Centered Content" class="centered-image">
+    </div>
+
+</body>
+</html>
