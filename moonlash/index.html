@@ -102,6 +102,7 @@
         .dek {
             max-width: 760px;
             margin-bottom: 0;
+            margin-top: 1.7rem;
             color: #c0cbde;
             font-size: 16px;
             line-height: 1.5;
@@ -202,6 +203,7 @@
             grid-template-columns: repeat(12, 1fr);
             grid-auto-rows: minmax(122px, auto);
             gap: 11px;
+            margin-top: 1rem;
         }
 
         .tile {
@@ -456,10 +458,10 @@
         }
 
         .dot {
-            width: 12px;
-            height: 12px;
+            width: 32px;
+            height: 32px;
             display: inline-block;
-            border: 1px solid rgba(237, 244, 255, .72);
+            border: 1px solid #000;
             box-shadow: 0 0 8px rgba(97, 231, 255, .18);
         }
 
@@ -560,8 +562,8 @@
         <header class="masthead">
             <div>
                 <div class="eyebrow">A living system map / capability overview</div>
-                <h1>Moonlash<br>runtime map.</h1>
-                <p class="dek">An event-driven AI runtime connected to a complete 3D environment and a persistent 24/7
+                <h1>MOONLASH</h1>
+                <p class="dek">3D AI Vtuber Red Head connected to a complete 3D environment and a persistent 24/7
                     Discord presence. It controls conversation, memory, voice, vision, characters, cameras, lights,
                     animation, tracking, clothing, props, particles, games, media, scheduling, and recovery.</p>
             </div>
@@ -570,8 +572,9 @@
 
         <section class="flow" aria-label="A live event moving through the system">
             <div class="flow-step">
-                <div class="kicker">01 / intake</div><strong>Event normalization</strong><span>Chat, voice, sound,
-                    timer, image, or audience action.</span>
+                <div class="kicker">01 / intake</div><strong>Event normalization</strong><span>Chat, discord, voice per
+                    mic, discord voice per user, sound from game,
+                    timer, game vision, desktop vision, image, video, gif, or audience action.</span>
             </div>
             <div class="flow-step">
                 <div class="kicker">02 / context</div><strong>Context enrichment</strong><span>Recent conversation,
@@ -595,7 +598,20 @@
             <h2>Functional subsystems</h2>
             <p>Each tile describes one runtime responsibility.</p>
         </div>
+        <article class="tile dark wide">
+            <span class="tile-label">Category key</span>
+            <h3>Subsystem categories.</h3>
+            <div class="legend-row">
+                <span class="legend"><i class="dot" style="background:var(--lime)"></i> intelligence</span>
+                <span class="legend"><i class="dot" style="background:var(--coral)"></i> live input</span>
+                <span class="legend"><i class="dot" style="background:var(--violet)"></i> presentation</span>
+                <span class="legend"><i class="dot" style="background:var(--blue)"></i> continuity</span>
+                <span class="legend"><i class="dot" style="background:var(--green)"></i> experiences</span>
+            </div>
+        </article>
+
         <section class="matrix">
+
             <article class="tile dark wide anchor double">
                 <span class="tile-label">Context subsystem / active state</span>
                 <span class="number">01</span>
@@ -1320,17 +1336,6 @@
         </section>
 
         <section class="footer">
-            <article class="tile yellow">
-                <span class="tile-label">Category key</span>
-                <h3>Subsystem categories.</h3>
-                <div class="legend-row">
-                    <span class="legend"><i class="dot" style="background:var(--lime)"></i> intelligence</span>
-                    <span class="legend"><i class="dot" style="background:var(--coral)"></i> live input</span>
-                    <span class="legend"><i class="dot" style="background:var(--violet)"></i> presentation</span>
-                    <span class="legend"><i class="dot" style="background:var(--blue)"></i> continuity</span>
-                    <span class="legend"><i class="dot" style="background:var(--green)"></i> experiences</span>
-                </div>
-            </article>
             <article class="tile dark">
                 <span class="tile-label">Integrated runtime</span>
                 <h3>Asynchronous subsystem coordination.</h3>
