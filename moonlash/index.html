@@ -96,7 +96,12 @@
             line-height: .86;
             letter-spacing: -.065em;
             font-weight: 900;
-            text-shadow: 0 0 24px rgba(97, 231, 255, .14);
+            text-shadow:
+                3px 3px 0 #000,
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
         }
 
         .dek {
@@ -105,6 +110,11 @@
             color: #c0cbde;
             font-size: 16px;
             line-height: 1.5;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
         }
 
         .stamp {
@@ -147,20 +157,20 @@
         }
 
         .flow-step:not(:last-child)::after {
-            content: '>';
+            content: '';
             position: absolute;
             right: -12px;
             top: 35px;
             z-index: 2;
             width: 20px;
             height: 20px;
-            display: grid;
-            place-items: center;
-            color: #222638;
             border: 1px solid #f9e89e;
             border-radius: 50%;
             background: var(--yellow);
-            font-weight: 900;
+            background-image: url('../caret-right.svg');
+            background-size: 24px 24px;
+            background-position: center;
+            background-repeat: no-repeat;
             box-shadow: 0 0 12px rgba(241, 211, 110, .35);
         }
 
@@ -476,6 +486,10 @@
                 grid-template-columns: 1fr;
             }
 
+            header {
+                background-position: right center;
+            }
+
             .stamp {
                 width: 115px;
                 height: 115px;
@@ -497,10 +511,11 @@
             }
 
             .flow-step:not(:last-child)::after {
-                content: 'v';
+                content: '';
                 right: 14px;
                 top: auto;
                 bottom: -12px;
+                transform: rotate(90deg);
             }
 
             .matrix {
@@ -570,9 +585,9 @@
             <div>
                 <div class="eyebrow">A viewer's guide / how to play along</div>
                 <h1>MOONLASH</h1>
-                <p class="dek">Moonlash is an advanced interactive 3D VTuber.</p>
+                <p class="dek">Moonlash is an advanced interactive 3D VTuber</p>
             </div>
-            <div class="stamp">FUNCTION<br>MATRIX</div>
+            <div class="stamp">WHAT CAN<br>MOON DO?</div>
         </header>
 
         <section class="flow" aria-label="A viewer's action moving through the stream">
